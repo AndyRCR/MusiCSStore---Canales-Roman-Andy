@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/ico" href="src/logo.ico">
+	<title>MusiCSStore</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!--Background con pos Absolute para no aplicar pseudoelementos-->
+	<div class="fondo"></div>
+
+	<!--Navbar-->
+	<nav id="navbar">
+		<div class="navbarFirst">
+			<div class="flexContainer">
+				<a href="index.html"><img src="src/logo.png"></a>
+			</div>
+		</div>
+		<div class="navbarSecond">
+			<div class="flexContainer">
+				<ul>
+					<li class="navItem"><a href="nosotros.html">Sobre nosotros</a></li>
+					<li class="navItem"><a href="guitarras.html">Guitarras y Bajos</a></li>
+					<li class="navItem"><a href="teclados.html">Teclados y Pianos</a></li>
+					<li class="navItem"><a href="percusion.html">Percusión</a></li>
+				</ul>
+			</div>
+		</div>		
+	</nav>
+	
+	<div class="gridContainer">
+		<!--GridItem Main-->
+		<div id="main">
+			<div class="bannerSlogan">
+				<p>Mas que un instrumento, un compañero</p>
+			</div>
+			<div class="caracteristicasContainer">
+				<div>
+					<div class="caracteristicaItem">Envios a todo Perú</div>
+					<div class="caracteristicaItem">Soporte las 24hrs</div>
+				</div>
+				<div>
+					<div class="caracteristicaItem">Chatea con nosotros</div>
+					<div class="caracteristicaItem">Nuestros locales</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--GridItem Promociones-->
+		<div id="promociones">
+			<h2>Ofertas en las siguientes categorias: </h2>
+			<div class="promocionesItem">
+				<div class="slider">
+					<ul>
+						<li><img src="src/promociones/guitarras/promo1.jpg"></li>
+						<li><img src="src/promociones/teclados/promo2.jpg"></li>
+						<li><img src="src/promociones/percusion/promo3.jpg"></li>
+						<li><img src="src/promociones/audio/promo4.jpg"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		<!--GridItem Marcas-->
+		<div id="marcas">
+			<h2>Nuestras marcas</h2>
+			<div class="marcasItem">
+				<img src="src/marcas/marca1.png">
+				<img src="src/marcas/marca2.png">
+				<img src="src/marcas/marca3.png">
+				<img src="src/marcas/marca4.png">
+				<img src="src/marcas/marca1.png">
+				<img src="src/marcas/marca2.png">
+				<img src="src/marcas/marca3.png">
+				<img src="src/marcas/marca4.png">
+				<img src="src/marcas/marca1.png">
+			</div>
+		</div>
+	
+		<!--GridItem Contacto y Ubicacion-->
+		<div id="contacto">
+			<div class="contactoItem">
+				<div class="contactanos">
+					<h2>Contactanos</h2>
+					<form id="contactoForm" action="">
+						<div class="formItem">
+							<label>Nombre:</label>
+							<input type="text" id="nombre" name="nombre" placeholder="Nombre">
+						</div>
+						<div class="formItem">
+							<label>Telefono:</label>
+							<input type="number" id="telefono" name="telefono" placeholder="Numero de contacto">
+						</div> 
+						<div class="formItem">
+							<label>Email:</label>
+							<input type="text" id="email" name="email" placeholder="Email de contacto">
+						</div>
+						<div class="formItem">
+							<label>Tu consulta:</label>
+							<input type="textarea" id="consulta" name="consulta" placeholder="Tu consulta">
+						</div>
+						<div class="formItem">
+							<button type="submit">Enviar</button>
+						</div>
+					</form>
+				</div>
+		
+				<div class="ubicacion">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9054325124434!2d-74.0076692455562!3d40.742106350472234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259e9126203a9%3A0x387e3b57e05fc00c!2sChelsea%20Music%20Hall!5e0!3m2!1ses-419!2spe!4v1636322919335!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+	
+		<!--GridItem Footer-->
+		<div id="footer">
+			<section id="footer_1">
+				<span class="icon"><a href="https://www.facebook.com">Facebook</a></span>
+				<span class="icon"><a href="https://www.twitter.com">Twitter</a></span>
+				<span class="icon"><a href="https://www.instagram.com">Instagram</a></span>
+				<span class="icon"><a href="https://www.linkedin.com">LinkedIn</a></span>
+			</section>
+
+			<div class="footer_copy">
+				&copy; 2021 | Todos los derechos reservados xd
+			</div>
+		</div>
+	</div>
+</body>
+</html>

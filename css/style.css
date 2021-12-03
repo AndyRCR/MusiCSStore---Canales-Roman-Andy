@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/*Separacion*/
+.contenido{
+    width: 100%;
+    height: calc(100vh - 133px);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+/************/
+
+body{
+	background-image: url("https://i.ibb.co/MpfNVVw/imageonline-co-darkenimage.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+/*****GridContainer*****/
+.gridContainer{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 400px);
+    padding-top: 83px;
+}
+
+/*****Navbar*****/
+#navbar{
+    width: 100%;
+    height: 83px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbarFirst, .navbarSecond{
+    background-color: black;
+    height: 40px;
+}
+
+.navbarFirst{
+    font-family: 'Itim', cursive;
+    display: flex;
+}
+
+.flexContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer a{
+    display: inline-block;
+    height: 80%;
+}
+
+.flexContainer img{
+    height: 100%;
+}
+
+.navbarSecond{
+    font-family: "Libre Franklin", sans-serif;
+    padding: 10px 50px;
+}
+
+.navbarSecond ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.navbarSecond li a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+nav a:hover{
+    color: yellow;
+	transition: 1s;
+}
+
+/*****Banner*****/
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bannerSlogan{
+    text-align: center;
+    color: white;
+    font-family: 'Itim', cursive;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.caracteristicasContainer{
+    width: 100%;
+    color: #0076DE;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.caracteristicasContainer div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/*****Promociones*****/
+h2, label{
+    display: block;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#promociones ul{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.promocionesItem{
+    margin: 30px 0;
+}
+
+.slider img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*****Marcas*****/
+#marcas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.marcasItem{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.marcasItem img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*****Contacto******/
+#contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.contactoItem{
+    margin: 10px 0;
+    display: flex;
+}
+
+.contactanos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contactoForm{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+}
+
+#contactoForm input{
+    width: 70%;
+    height: 20px;
+    text-align: center;
+    border-style: none;
+    background-color: white;
+}
+
+.formItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.ubicacion{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicacion iframe{
+    width: 100%;
+}
+
+/*****Footer*****/
+#footer{
+    height: 133px;
+    background-color: black;
+    color: white;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+#footer ul{
+    list-style: none;
+}
+
+.footerItem{
+    width: 49%;
+    display: inline-block;
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/*******************************/
+/*Nosotros*/
+
+.gridContainerNosotros{
+    color: white;
+    text-align: justify;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 83px;
+}
+
+.gridContainerNosotros h2{
+    margin: 40px 0;
+}
+
+.nosotrosItem{
+    display: flex;
+}
+
+.nosotrosText{
+    width: 50%;
+    padding: 30px;
+}
+
+.nosotrosImg{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotrosImg img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+/*******************************/
+/*Guitarras, pianos, percusion*/
+
+.gridContainerGuitarras, .gridContainerPianos, .gridContainerBaterias{
+    color: white;
+    text-align: justify;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 83px;
+}
+
+.gridContainerGuitarras h2, .gridContainerPianos h2, .gridContainerBaterias h2{
+    margin: 40px 0;
+}
+
+.guitarrasItem, .pianosItem, .bateriasItem{
+    display: flex;
+}
+
+.guitarrasText, .pianosText, .bateriasText{
+    width: 50%;
+    padding: 30px;
+}
+
+.guitarrasImg, .pianosImg, .bateriasImg{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guitarrasImg img, .pianosImg img, .bateriasImg img{
+    width: 90%;
+    border-radius: 10px;
+    margin: 25px;
+    opacity: 0.8;
+    border: 10px solid #eee;
+    transition: all 0.5s ease;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+}
+
+.pianosImg img, .bateriasImg img{
+    width: 70%;
+}
+
+.guitarrasImg img:hover, .pianosImg img:hover, .bateriasImg img:hover {
+    opacity: 1;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+    -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
+
+.catalogoGuitarras h3, .catalogoPianos h3, .catalogoBaterias h3{
+    margin-top: 10px;
+}
+
+.catalogo1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.catalogo2, .catalogo3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.catalogoGuitarras h2, .catalogoPianos h2, .catalogoBaterias h2{
+    margin-top: 80px;
+}
+
+.catalogoItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalogoItem img{
+    width: 100%;
+    transition: 1s;
+}
+
+.catalogoItem img:hover{
+    filter: sepia(60%);
+    transition: 1s;
+}
+
+/*****Footer*****/
+#footer{
+	width: 100%;
+	background-color: black;
+	margin-top: 50px;
+	padding-bottom: 170px;
+	color: white;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#footer_1{
+	width: 13%;
+	padding-top: 46px;
+	padding-bottom: 22px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#footer .icon{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 20px;
+}
+
+#footer a{
+	color: white;
+}
+
+#footer a:hover{
+	color: #E9C132;
+	transition: 0.8s;
+}
+
+.footer_copy{
+	margin-top: 20px; 
+	font-family: "Open Sans",sans-serif;
+	font-weight: 400;
+}
+
+@media (max-width: 770px){
+    /***Inicio***/
+
+    .gridContainer{
+        padding-top: 123px;
+    }
+
+    .navbarSecond{
+        height: 80px;
+    }
+
+    .navbarSecond ul{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40px 40px;
+    }
+
+    .navbarSecond a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main{
+        justify-content: space-around;
+    }
+
+    .caracteristicasContainer{
+        flex-direction: column;
+    }
+
+    .caracteristicaItem{
+        margin: 20px 0;
+    }
+
+    #contacto{
+        padding: 0;
+    }
+
+    .contactoItem{
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .contactanos, .ubicacion{
+        width: 100%;
+    }
+
+    .ubicacion iframe{
+        width: 100%;
+        max-height: 200px;
+    }
+
+    /***Nosotros***/
+    .gridContainerNosotros, .gridContainerBaterias,
+    .gridContainerGuitarras, .gridContainerPianos{
+        padding-top: 123px;
+    }
+
+    .nosotrosItem, .bateriasItem, .guitarrasItem, .pianosItem{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .nosotrosText, .nosotrosImg,
+    .guitarrasText, .guitarrasImg,
+    .pianosText, .pianosImg,
+    .bateriasText, .bateriasImg{
+        width: 100%;
+    }
+}
