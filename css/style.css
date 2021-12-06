@@ -371,12 +371,15 @@ h2, label{
 
 .catalogoItem img{
     width: 100%;
-    transition: 1s;
+    filter: grayscale(100%);
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
 .catalogoItem img:hover{
-    filter: sepia(60%);
-    transition: 1s;
+    filter: none;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 /*****Footer*****/
