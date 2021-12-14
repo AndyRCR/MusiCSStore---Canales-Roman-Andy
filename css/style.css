@@ -374,6 +374,7 @@ h2, label{
     filter: grayscale(100%);
     border-radius: 10px;
     transition: 0.5s;
+    min-width: ;
 }
 
 .catalogoItem img:hover{
@@ -497,4 +498,68 @@ h2, label{
     .bateriasText, .bateriasImg{
         width: 100%;
     }
+
+    .catalogo1, .catalogo2, .catalogo3{
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 10px;
+        text-align: start;
+    }
+}
+
+/*******/
+
+.btn-one {
+    margin-top: 10px;
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+    height: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+}
+.btn-one span {
+	transition: all 0.3s;
+}
+.btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+	letter-spacing: 2px;
+}
+.btn-one:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: transparent;
+}
+.btn-one:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
 }
