@@ -236,11 +236,6 @@ h2, label{
     list-style: none;
 }
 
-.footerItem{
-    width: 49%;
-    display: inline-block;
-}
-
 #footer a{
     text-decoration: none;
     color: white;
@@ -374,7 +369,6 @@ h2, label{
     filter: grayscale(100%);
     border-radius: 10px;
     transition: 0.5s;
-    min-width: ;
 }
 
 .catalogoItem img:hover{
