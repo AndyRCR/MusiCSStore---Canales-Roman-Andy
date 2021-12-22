@@ -10,24 +10,103 @@
 </head>
 <body>
 	<!--Navbar-->
-	<nav id="navbar">
+	<nav>
 		<div class="navbarFirst">
-			<div class="flexContainer">
-				<a href="index.html"><img src="src/logo.png"></a>
+			<div class="navLogo">
+				<div class="navLogo-texto">Musi</div>
+				<a href=""><img src="src/logo.png" alt=""></a>
+				<div class="navLogo-texto">tore</div>
+			</div>
+	
+			<div class="navBuscar">
+				<div class="navBuscar-barra">
+					<input type="search" placeholder="Búsqueda">
+					<div class="navBuscar-icono">
+						<i class="fas fa-search"></i>
+					</div>
+				</div>
+			</div>
+	
+			<div class="navIcono-comprar">
+				<a href="#">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+				
 			</div>
 		</div>
-		<div class="navbarSecond">
-			<div class="flexContainer">
-				<ul>
-					<li class="navItem"><a href="nosotros.html">Sobre nosotros</a></li>
-					<li class="navItem"><a href="guitarras.html">Guitarras y Bajos</a></li>
-					<li class="navItem"><a href="teclados.html">Teclados y Pianos</a></li>
-					<li class="navItem"><a href="percusion.html">Percusión</a></li>
-				</ul>
-			</div>
-		</div>		
-	</nav>
 	
+		<div class="navbarSecond">
+			<ul class="navUl">
+				<li class="navLi">
+					<a href="#">
+						Inicio
+						<i class="fas fa-angle-down"></i>
+					</a>
+				</li>
+				<li class="navLi">
+					<a href="#">
+						Catálogo
+						<i class="fas fa-angle-down"></i>
+					</a>
+				</li>
+				<li class="navLi">
+					<a href="#">
+						Promociones
+						<i class="fas fa-angle-down"></i>
+					</a>
+				</li>
+				<li class="navLi">
+					<a href="#">
+						Sobre nosotros
+						<i class="fas fa-angle-down"></i>
+					</a>
+				</li>
+				<li class="navLi">
+					<a href="#">
+						Contáctanos
+						<i class="fas fa-angle-down"></i>
+					</a>
+				</li>
+			</ul>
+			
+			<ul class="navResponsive-ul">
+				<div class="navResponsive-button-container">
+					<div class="navResponsive-button fas fa-bars">
+					</div>
+				</div>
+	
+				<div class="navLi-container">
+					<li class="navResponsive-li">
+						<a href="#">
+							Inicio
+						</a>
+					</li>
+					<li class="navResponsive-li">
+						<a href="#">
+							Catálogo
+						</a>
+					</li>
+					<li class="navResponsive-li">
+						<a href="#">
+							Promociones
+						</a>
+					</li>
+					<li class="navResponsive-li">
+						<a href="#">
+							Sobre nosotros
+						</a>
+					</li>
+					<li class="navResponsive-li">
+						<a href="#">
+							Contáctanos
+						</a>
+					</li>
+				</div>
+				
+			</ul>
+		</div>
+	</nav>
+
 	<div class="gridContainer">
 		<!--GridItem Main-->
 		<div id="main">
@@ -146,10 +225,10 @@
 	<!--GridItem Footer-->
 	<footer id="footer">
 		<section id="footer_1">
-			<span class="icon"><a href="https://www.facebook.com">Facebook</a></span>
-			<span class="icon"><a href="https://www.twitter.com">Twitter</a></span>
-			<span class="icon"><a href="https://www.instagram.com">Instagram</a></span>
-			<span class="icon"><a href="https://www.linkedin.com">LinkedIn</a></span>
+			<div class="icon"><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></div>
+			<div class="icon"><a href="https://www.linkedin.com"><i class="fab fa-whatsapp"></i></a></div>
+			<div class="icon"><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></div>
+			<div class="icon"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></div>
 		</section>
 
 		<div class="footer_copy">

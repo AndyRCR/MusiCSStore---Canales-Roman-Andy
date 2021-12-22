@@ -35,25 +35,6 @@
 }
 
 @media (max-width: 770px){
-    .gridContainer{
-        padding-top: 123px;
-    }
-
-    .navbarSecond{
-        height: 80px;
-
-        ul{
-            grid-template-columns: repeat(2, 1fr) !important;
-            grid-template-rows: 40px 40px;
-        }
-
-        a{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
     .gridContainerNosotros{
         padding-top: 123px;
     }
