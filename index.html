@@ -5,12 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/ico" href="src/logo.ico">
 	<title>MusiCSStore</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="scss/styleNuevo.css">
 </head>
 <body>
-	<!--Background con pos Absolute para no aplicar pseudoelementos-->
-	<div class="fondo"></div>
-
 	<!--Navbar-->
 	<nav id="navbar">
 		<div class="navbarFirst">
@@ -51,14 +48,35 @@
 		<!--GridItem Promociones-->
 		<div id="promociones">
 			<h2>Ofertas en las siguientes categorias: </h2>
-			<div class="promocionesItem">
+
+			<div class="containerSlider">
+				<input type="radio" id="1" name="image-slide" hidden/>
+				<input type="radio" id="2" name="image-slide" hidden/>
+				<input type="radio" id="3" name="image-slide" hidden/>
+				<input type="radio" id="4" name="image-slide" hidden/>
+				<input type="radio" id="5" name="image-slide" hidden/>
+
 				<div class="slider">
-					<ul>
-						<li><img src="src/promociones/guitarras/promo1.jpg"></li>
-						<li><img src="src/promociones/teclados/promo2.jpg"></li>
-						<li><img src="src/promociones/percusion/promo3.jpg"></li>
-						<li><img src="src/promociones/audio/promo4.jpg"></li>
-					</ul>
+
+					<div class="sliderItem">
+						<img src="src/promociones/guitarras/promo1.jpg">
+					</div>
+
+					<div class="sliderItem">
+						<img src="src/promociones/teclados/promo2.jpg">
+					</div>
+
+					<div class="sliderItem">
+						<img src="src/promociones/percusion/promo3.jpg">
+					</div>
+
+					<div class="sliderItem">
+						<img src="src/promociones/audio/promo4.jpg">
+					</div>
+
+					<div class="sliderItem">
+						<img src="src/promociones/percusion/promo3.jpg">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -114,20 +132,20 @@
 				</div>
 			</div>
 		</div>
-	
-		<!--GridItem Footer-->
-		<footer id="footer">
-			<section id="footer_1">
-				<span class="icon"><a href="https://www.facebook.com">Facebook</a></span>
-				<span class="icon"><a href="https://www.twitter.com">Twitter</a></span>
-				<span class="icon"><a href="https://www.instagram.com">Instagram</a></span>
-				<span class="icon"><a href="https://www.linkedin.com">LinkedIn</a></span>
-			</section>
-
-			<div class="footer_copy">
-				&copy; 2021 | Todos los derechos reservados xd
-			</div>
-		</footer>
 	</div>
+
+	<!--GridItem Footer-->
+	<footer id="footer">
+		<section id="footer_1">
+			<span class="icon"><a href="https://www.facebook.com">Facebook</a></span>
+			<span class="icon"><a href="https://www.twitter.com">Twitter</a></span>
+			<span class="icon"><a href="https://www.instagram.com">Instagram</a></span>
+			<span class="icon"><a href="https://www.linkedin.com">LinkedIn</a></span>
+		</section>
+
+		<div class="footer_copy">
+			&copy; 2021 | All rights reserved
+		</div>
+	</footer>
 </body>
 </html>

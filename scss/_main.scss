@@ -1,0 +1,230 @@
+.gridContainer{
+    width: 85%;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 400px);
+    padding-top: 83px;
+    background-image: url("https://i.ibb.co/MpfNVVw/imageonline-co-darkenimage.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    margin: auto;
+    box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .bannerSlogan{
+        text-align: center;
+        color: white;
+        font-family: 'Itim', cursive;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .caracteristicasContainer{
+        width: 100%;
+        color: #0076DE;
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-around;
+
+        div{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+}
+
+#promociones{
+    h2, label{
+        display: block;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    ul{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+        list-style: none;
+    }
+
+    .promocionesItem{margin: 30px 0;}
+
+    img{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .containerSlider{
+        margin: 40px auto;
+        position: relative;
+        max-width: 1000px;
+        width: 80%;
+        border-radius: 8px;
+        overflow: hidden;
+        z-index: 1;
+        border: 1px solid black;
+
+        .slider{
+            display: flex;
+            transform: translate3d(0, 0, 0);
+            transition: all 600ms;
+            animation-name: autoplay;
+            animation-duration: 18s;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+
+            .sliderItem{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@keyframes autoplay{
+	20%{
+		transform: translate3d(calc(-100% * 0), 0, 0);
+	}
+
+	40%{
+		transform: translate3d(calc(-100% * 1), 0, 0);
+	}
+
+	60%{
+		transform: translate3d(calc(-100% * 2), 0, 0);
+	}
+
+	80%{
+		transform: translate3d(calc(-100% * 3), 0, 0);
+	}
+
+	100%{
+		transform: translate3d(calc(-100% * 4), 0, 0);
+	}
+}
+
+#marcas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+
+    .marcasItem{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+
+        img{
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    color: white;
+
+    .contactoItem{
+        margin: 10px 0;
+        display: flex;
+    }
+
+    .contactanos{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .ubicacion{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        iframe{width: 100%;}
+    }
+}
+
+#contactoForm{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+
+    input{
+        width: 70%;
+        height: 20px;
+        text-align: center;
+        border-style: none;
+        background-color: white;
+    }
+
+    .formItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .girdContainer{
+        padding-top: 123px;
+    }
+
+    #main{
+        justify-content: space-around;
+    }
+
+    .caracteristicasContainer{
+        flex-direction: column;
+    }
+
+    .caracteristicaItem{
+        margin: 20px 0;
+    }
+
+    #contacto{
+        padding: 0;
+
+        .contactoItem{
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0;
+        }
+
+        .contactanos, .ubicacion{
+            width: 100%;
+        }
+
+        .ubicacion iframe{
+            width: 100%;
+            max-height: 200px;
+        }
+    }
+}

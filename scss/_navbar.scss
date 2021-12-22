@@ -1,0 +1,56 @@
+nav{
+    width: 100%;
+    height: 83px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+
+    & > div{
+        background-color: black;
+        height: 40px;
+    }
+
+    .navbarFirst{
+        font-family: 'Itim', cursive;
+        display: flex;
+
+        & > div{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                display: inline-block;
+                height: 80%;
+            }
+
+            img{ height: 100%;}
+        }
+    }
+
+    .navbarSecond{
+        font-family: "Libre Franklin", sans-serif;
+        padding: 10px 50px;
+        
+        ul{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+
+            a{
+                text-decoration: none;
+                color: white;
+                transition: 1s;
+            }
+
+            a:hover{
+                color: yellow;
+	            transition: 1s;
+            }
+        }
+    }
+}

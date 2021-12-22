@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import "variables";
 
 *{
     margin: 0;
@@ -9,193 +10,24 @@
 }
 
 body{
-    background-image: url("https://i.ibb.co/MpfNVVw/imageonline-co-darkenimage.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
 	height: 100%;
 	width: 100%;
+	background: url("https://img.freepik.com/free-vector/music-instrument-doodle-seamless-pattern_6997-572.jpg?size=626&ext=jpg") repeat 0 0;
+	animation: bg-scrolling-reverse 10s infinite;
+	animation-timing-function: linear;
 }
 
-.gridContainer{
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 400px);
-    padding-top: 83px;
+@keyframes bg-scrolling-reverse {
+	100% {
+		background-position: 626px 599px;
+	}
 }
 
-/*****Navbar*****/
-
-nav{
-    width: 100%;
-    height: 83px;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    z-index: 10;
-
-    & > div{
-        background-color: black;
-        height: 40px;
-    }
-
-    .navbarFirst{
-        font-family: 'Itim', cursive;
-        display: flex;
-
-        & > div{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            a{
-                display: inline-block;
-                height: 80%;
-            }
-
-            img{ height: 100%;}
-        }
-    }
-
-    .navbarSecond{
-        font-family: "Libre Franklin", sans-serif;
-        padding: 10px 50px;
-        
-        ul{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            text-align: center;
-
-            a{
-                text-decoration: none;
-                color: white;
-                transition: 1s;
-            }
-
-            a:hover{
-                color: yellow;
-	            transition: 1s;
-            }
-        }
-    }
-}
-
-/*****Footer*****/
-
-footer{
-    width: 100%;
-	background-color: black;
-	margin-top: 50px;
-	padding-bottom: 170px;
-	color: white;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-
-    section{
-        width: 13%;
-        padding-top: 46px;
-        padding-bottom: 22px;
-        display: flex;
-        justify-content: space-around;
-
-        span{
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0px 20px;
-
-            a{
-                color: white;
-                text-decoration: none;
-            }
-
-            a:hover{
-                color: #E9C132;
-	            transition: 0.8s;
-            }
-        }
-    }
-
-    div{
-        margin-top: 20px; 
-        font-family: "Open Sans",sans-serif;
-        font-weight: 400;
-    }
-}
-
-/*****Nosotros*****/
-
-.gridContainerNosotros{
-    color: white;
-    text-align: justify;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 83px;
-
-    h2{
-        margin: 40px 0;
-        text-align: center;
-    }
-}
-
-.nosotrosItem{
-    display: flex;
-}
-
-.nosotrosText{
-    width: 50%;
-    padding: 30px;
-}
-
-.nosotrosImg{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img{
-        width: 90%;
-        border-radius: 10px;
-    }
-}
-
-@media (max-width: 770px){
-    .gridContainer{
-        padding-top: 123px;
-    }
-
-    .navbarSecond{
-        height: 80px;
-
-        ul{
-            grid-template-columns: repeat(2, 1fr) !important;
-            grid-template-rows: 40px 40px;
-        }
-
-        a{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
-    .gridContainerNosotros{
-        padding-top: 123px;
-    }
-    
-    .nosotrosItem{
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-
-    .nosotrosText, .nosotrosImg{width: 100%;}
-}
+@import "navbar";
+@import "footer";
+@import "main";
+@import "nosotros";
+@import "contactanos";
+@import "catalogo";
+@import "promociones";
+@import "tools";
