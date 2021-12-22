@@ -6,6 +6,7 @@
 	<link rel="icon" type="image/ico" href="src/logo.ico">
 	<title>MusiCSStore</title>
 	<link rel="stylesheet" href="scss/styleNuevo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 	<!--Navbar-->
@@ -35,12 +36,26 @@
 			</div>
 			<div class="caracteristicasContainer">
 				<div>
-					<div class="caracteristicaItem">Envios a todo Perú</div>
-					<div class="caracteristicaItem">Soporte las 24hrs</div>
+					<div class="caracteristica">
+						<i class="fas fa-truck"></i>
+						<div class="caracteristicaItem">Envios a todo Perú</div>
+					</div>
+					<div class="caracteristica">
+						<i class="fas fa-headset"></i>
+						<div class="caracteristicaItem">Soporte las 24hrs</div>
+					</div>
 				</div>
 				<div>
-					<div class="caracteristicaItem">Chatea con nosotros</div>
-					<div class="caracteristicaItem">Nuestros locales</div>
+					<div class="caracteristica">
+						<i class="fab fa-whatsapp"></i>
+						<a href="https://wa.me/message/AQYVEQJDJRGBM1" target="_blank">
+							<div class="caracteristicaItem">Chatea con nosotros aquí</div>
+						</a>
+					</div>
+					<div class="caracteristica">
+						<i class="fas fa-map-marked-alt"></i>
+						<div class="caracteristicaItem">Nuestros locales</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -93,7 +108,6 @@
 				<img src="src/marcas/marca2.png">
 				<img src="src/marcas/marca3.png">
 				<img src="src/marcas/marca4.png">
-				<img src="src/marcas/marca1.png">
 			</div>
 		</div>
 	
@@ -102,27 +116,22 @@
 			<div class="contactoItem">
 				<div class="contactanos">
 					<h2>Contactanos</h2>
+					<p>Tu consulta es importante para nosotros</p>
 					<form id="contactoForm" action="">
 						<div class="formItem">
-							<label>Nombre:</label>
-							<input type="text" id="nombre" name="nombre" placeholder="Nombre">
+							<input autocomplete="off" type="text" id="nombre" name="nombre" placeholder="Nombre">
 						</div>
 						<div class="formItem">
-							<label>Telefono:</label>
-							<input type="number" id="telefono" name="telefono" placeholder="Numero de contacto">
+							<input autocomplete="new-number" type="number" id="telefono" name="telefono" placeholder="Numero de contacto">
 						</div> 
 						<div class="formItem">
-							<label>Email:</label>
-							<input type="text" id="email" name="email" placeholder="Email de contacto">
+							<input autocomplete="" type="text" id="email" name="email" placeholder="Email de contacto">
 						</div>
 						<div class="formItem">
-							<label>Tu consulta:</label>
 							<input type="textarea" id="consulta" name="consulta" placeholder="Tu consulta">
 						</div>
 						<div class="formItem">
-							<div class="btn btn-one">
-							  <span>Enviar</span>
-							</div>
+							<button>Enviar</button>
 						  </div>
 					</form>
 				</div>

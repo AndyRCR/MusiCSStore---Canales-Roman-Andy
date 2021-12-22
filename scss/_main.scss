@@ -2,6 +2,7 @@
     width: 85%;
     display: grid;
     grid-template-rows: repeat(auto-fit, 400px);
+    grid-gap: 30px;
     padding-top: 83px;
     background-image: url("https://i.ibb.co/MpfNVVw/imageonline-co-darkenimage.png");
 	background-repeat: no-repeat;
@@ -10,6 +11,11 @@
 	background-attachment: fixed;
     margin: auto;
     box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
+
+
+    & > div{
+        padding: 0 20px;
+    }
 }
 
 #main{
@@ -34,10 +40,37 @@
         display: flex;
         justify-content: space-around;
 
+        .caracteristicaItem{
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .caracteristica{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+
+            a{
+                text-align: center;
+                text-decoration: none;
+                color: #0076DE;
+
+                &:hover{
+                    color: #155b97;
+                    transition: 0.5s;
+                }
+            }
+        }
+
         div{
             display: flex;
             width: 100%;
             justify-content: space-around;
+        }
+
+        i{
+            font-size: 25px;
         }
     }
 }
@@ -131,8 +164,8 @@
     .marcasItem{
         padding: 10px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-gap: 10px;
 
         img{
@@ -167,21 +200,33 @@
         justify-content: center;
         align-items: center;
 
-        iframe{width: 100%;}
+        iframe{
+            width: 100%;
+            max-height: 300px;
+        }
     }
 }
 
 #contactoForm{
     width: 100%;
+    margin-top: 15px;
     display: grid;
     grid-template-rows: repeat(5, 50px);
 
     input{
-        width: 70%;
+        color: white;
+        outline: none;
+        width: 80%;
         height: 20px;
-        text-align: center;
+        text-align: left;
         border-style: none;
-        background-color: white;
+        background-color: transparent;
+        border-bottom: 2px solid white;
+        padding: 12px;
+
+        &::placeholder{
+            color: white;
+        }
     }
 
     .formItem{
@@ -190,23 +235,64 @@
         align-items: center;
         margin: 5px 0;
     }
+
+    button{
+        color: white;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 5px;
+        width: 150px;
+        border: 2px solid white;
+        border-radius: 3px;
+        background: transparent;
+        transition: 0.5s;
+
+        &:hover{
+            background-color: blue;
+            border: 2px solid transparent;
+            transition: 0.5s;
+        }
+    }
 }
 
 @media (max-width: 770px) {
-    .girdContainer{
+    .gridContainer{
+        width: 90%;
         padding-top: 123px;
     }
 
     #main{
         justify-content: space-around;
+        padding: 0 20px;
+
+        h2{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 28px;
+        }
     }
 
     .caracteristicasContainer{
         flex-direction: column;
+
+        i{
+            font-size: 20px;
+        }
     }
 
     .caracteristicaItem{
-        margin: 20px 0;
+        font-size: 17px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    #marcas{
+        .marcasItem{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
     }
 
     #contacto{
@@ -214,7 +300,7 @@
 
         .contactoItem{
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             margin: 0;
         }
 

@@ -109,7 +109,7 @@ nav .navbarSecond ul a:hover {
 footer {
   width: 100%;
   background-color: black;
-  padding-bottom: 170px;
+  padding-bottom: 20px;
   color: white;
   width: 100%;
   display: -webkit-box;
@@ -179,6 +179,7 @@ footer div {
   display: grid;
   -ms-grid-rows: (400px)[auto-fit];
       grid-template-rows: repeat(auto-fit, 400px);
+  grid-gap: 30px;
   padding-top: 83px;
   background-image: url("https://i.ibb.co/MpfNVVw/imageonline-co-darkenimage.png");
   background-repeat: no-repeat;
@@ -188,6 +189,10 @@ footer div {
   margin: auto;
   -webkit-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
           box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
+}
+
+.gridContainer > div {
+  padding: 0 20px;
 }
 
 #main {
@@ -226,6 +231,39 @@ footer div {
       justify-content: space-around;
 }
 
+#main .caracteristicasContainer .caracteristicaItem {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#main .caracteristicasContainer .caracteristica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .caracteristicasContainer .caracteristica a {
+  text-align: center;
+  text-decoration: none;
+  color: #0076DE;
+}
+
+#main .caracteristicasContainer .caracteristica a:hover {
+  color: #155b97;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 #main .caracteristicasContainer div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,6 +271,10 @@ footer div {
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+#main .caracteristicasContainer i {
+  font-size: 25px;
 }
 
 #promociones h2, #promociones label {
@@ -377,10 +419,10 @@ footer div {
   padding: 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
 }
 
@@ -440,10 +482,12 @@ footer div {
 
 #contacto .ubicacion iframe {
   width: 100%;
+  max-height: 300px;
 }
 
 #contactoForm {
   width: 100%;
+  margin-top: 15px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (50px)[5];
@@ -451,11 +495,31 @@ footer div {
 }
 
 #contactoForm input {
-  width: 70%;
+  color: white;
+  outline: none;
+  width: 80%;
   height: 20px;
-  text-align: center;
+  text-align: left;
   border-style: none;
-  background-color: white;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  padding: 12px;
+}
+
+#contactoForm input::-webkit-input-placeholder {
+  color: white;
+}
+
+#contactoForm input:-ms-input-placeholder {
+  color: white;
+}
+
+#contactoForm input::-ms-input-placeholder {
+  color: white;
+}
+
+#contactoForm input::placeholder {
+  color: white;
 }
 
 #contactoForm .formItem {
@@ -472,13 +536,41 @@ footer div {
   margin: 5px 0;
 }
 
+#contactoForm button {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 5px;
+  width: 150px;
+  border: 2px solid white;
+  border-radius: 3px;
+  background: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contactoForm button:hover {
+  background-color: blue;
+  border: 2px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media (max-width: 770px) {
-  .girdContainer {
+  .gridContainer {
+    width: 90%;
     padding-top: 123px;
   }
   #main {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding: 0 20px;
+  }
+  #main h2 {
+    font-size: 20px;
+  }
+  #main p {
+    font-size: 28px;
   }
   .caracteristicasContainer {
     -webkit-box-orient: vertical;
@@ -486,8 +578,19 @@ footer div {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .caracteristicasContainer i {
+    font-size: 20px;
+  }
   .caracteristicaItem {
-    margin: 20px 0;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  #marcas .marcasItem {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
   }
   #contacto {
     padding: 0;
@@ -497,9 +600,8 @@ footer div {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0;
   }
   #contacto .contactanos, #contacto .ubicacion {
