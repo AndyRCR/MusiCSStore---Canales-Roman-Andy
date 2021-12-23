@@ -5,27 +5,105 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/ico" href="src/logo.ico">
 	<title>MusiCSStore - Percusion</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="scss/styleNuevo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<div class="fondo"></div>
-
-	<nav id="navbar">
+	<nav>
 		<div class="navbarFirst">
-			<div class="flexContainer">
-				<a href="index.html"><img src="src/logo.png"></a>
+			<div class="navLogo">
+				<div class="navLogo-texto">Musi</div>
+				<a href="index.html"><img src="src/logo.png" alt=""></a>
+				<div class="navLogo-texto">tore</div>
+			</div>
+	
+			<div class="navBuscar">
+				<div class="navBuscar-barra">
+					<input type="search" placeholder="Búsqueda">
+					<div class="navBuscar-icono">
+						<i class="fas fa-search"></i>
+					</div>
+				</div>
+			</div>
+	
+			<div class="navIcono-comprar">
+				<a href="#">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+				
 			</div>
 		</div>
+	
 		<div class="navbarSecond">
-			<div class="flexContainer">
-				<ul>
-					<li class="navItem"><a href="nosotros.html">Sobre nosotros</a></li>
-					<li class="navItem"><a href="guitarras.html">Guitarras y Bajos</a></li>
-					<li class="navItem"><a href="teclados.html">Teclados y Pianos</a></li>
-					<li class="navItem"><a href="percusion.html">Percusión</a></li>
-				</ul>
-			</div>
-		</div>		
+			<ul class="navUl">
+				<li class="navLi">
+					<a href="index.html">
+						Inicio
+						<i class="fas fa-angle-down"></i>
+					</a>
+				</li>
+				<li class="navLi">
+					<a href="nosotros.html">
+						Nosotros
+						<i class="fas fa-angle-down"></i>
+					</a>
+				</li>
+				<li class="navLi">
+					<a href="guitarras.html">
+						Guitarras
+						<i class="fas fa-angle-down"></i>
+					</a>
+				</li>
+				<li class="navLi">
+					<a href="teclados.html">
+						Teclados
+						<i class="fas fa-angle-down"></i>
+					</a>
+				</li>
+				<li class="navLi">
+					<a href="percusion.html">
+						Percusión
+						<i class="fas fa-angle-down"></i>
+					</a>
+				</li>
+			</ul>
+			
+			<ul class="navResponsive-ul">
+				<div class="navResponsive-button-container">
+					<div class="navResponsive-button fas fa-bars">
+					</div>
+				</div>
+	
+				<div class="navLi-container">
+					<li class="navResponsive-li">
+						<a href="index.html">
+							Inicio
+						</a>
+					</li>
+					<li class="navResponsive-li">
+						<a href="nosotros.html">
+							Nosotros
+						</a>
+					</li>
+					<li class="navResponsive-li">
+						<a href="guitarras.html">
+							Guitarras
+						</a>
+					</li>
+					<li class="navResponsive-li">
+						<a href="teclados.html">
+							Teclados
+						</a>
+					</li>
+					<li class="navResponsive-li">
+						<a href="percusion.html">
+							Percusión
+						</a>
+					</li>
+				</div>
+				
+			</ul>
+		</div>
 	</nav>
 	
 	<div class="gridContainerBaterias">
@@ -87,19 +165,19 @@
 				</div>
 			</div>		
 		</div>
-
-		<div id="footer">
-			<section id="footer_1">
-				<span class="icon"><a href="https://www.facebook.com">Facebook</a></span>
-				<span class="icon"><a href="https://www.twitter.com">Twitter</a></span>
-				<span class="icon"><a href="https://www.instagram.com">Instagram</a></span>
-				<span class="icon"><a href="https://www.linkedin.com">LinkedIn</a></span>
-			</section>
-
-			<div class="footer_copy">
-				&copy; 2021 | Todos los derechos reservados xd
-			</div>
-		</div>
 	</div>
+
+	<footer id="footer">
+		<section id="footer_1">
+			<div class="icon"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></div>
+			<div class="icon"><a href="https://wa.me/message/AQYVEQJDJRGBM1" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+			<div class="icon"><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></div>
+			<div class="icon"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></div>
+		</section>
+
+		<div class="footer_copy">
+			&copy; 2021 | All rights reserved
+		</div>
+	</footer>
 </body>
 </html>

@@ -1,7 +1,5 @@
 nav{
-    position: fixed;
-    width: 100%;
-    z-index: 10;
+    @include navbarMixin;
 }
 
 .navbarFirst{
@@ -9,7 +7,7 @@ nav{
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: 90px;
-	background: black;
+	background: map-get($mapa, colorNav);
 	font-family: "Libre Franklin", sans-serif;
 	font-size: 0.9375rem;
 	letter-spacing: 0em;
