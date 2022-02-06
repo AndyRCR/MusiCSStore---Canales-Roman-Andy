@@ -264,7 +264,6 @@ nav {
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: -1;
-    z-index: 150;
   }
   .navResponsive-li {
     width: 100%;
@@ -728,19 +727,6 @@ footer div {
   padding: 12px;
 }
 
-#contactoForm textarea{
-    color: white;
-    outline: none;
-    width: 80%;
-    height: 20px;
-    text-align: left;
-    border-style: none;
-    background-color: transparent;
-    border-bottom: 2px solid white;
-    padding-left: 12px;
-    resize: none;
-}
-
 #contactoForm input::-webkit-input-placeholder {
   color: white;
 }
@@ -872,18 +858,6 @@ footer div {
   margin: auto;
   -webkit-box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
           box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.9), -12px 0 8px -4px rgba(0, 0, 0, 0.9);
-}
-
-@media (max-width: 1240px) {
-    .gridContainerNosotros{
-        height: auto;
-    }
-}
-
-@media (min-height: 950px) {
-    .gridContainerNosotros{
-        height: 100vh;
-    }
 }
 
 .gridContainerNosotros > div {
@@ -1419,3 +1393,4 @@ footer div {
     text-align: start;
   }
 }
+/*# sourceMappingURL=styleNuevo.css.map */
